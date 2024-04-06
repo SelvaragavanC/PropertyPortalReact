@@ -4,7 +4,10 @@
 
 #root{
   padding: 0px;
+  background-color: black;
+  height: 100vh;
 }
+
 
 .my-grid-template{
   display: grid;
@@ -17,4 +20,10 @@
 
 .bg-orange{
   background-color: #de4c05;
+}
+
+@media (max-width: 550px){
+  #root{
+    grid-template-rows: 2fr 8fr;
+  }
 }
